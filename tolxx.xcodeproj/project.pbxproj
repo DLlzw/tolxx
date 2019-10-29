@@ -15,6 +15,7 @@
 		042C78F923681DAA00B3B9B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042C78F723681DAA00B3B9B6 /* LaunchScreen.storyboard */; };
 		042C790423681DAB00B3B9B6 /* tolxxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C790323681DAB00B3B9B6 /* tolxxTests.swift */; };
 		042C790F23681DAB00B3B9B6 /* tolxxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C790E23681DAB00B3B9B6 /* tolxxUITests.swift */; };
+		7E2F1E1F15D226021DAC07DE /* Pods_tolxx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F638AFAF1623518BDD33E1B9 /* Pods_tolxx.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,9 @@
 		042C790A23681DAB00B3B9B6 /* tolxxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tolxxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042C790E23681DAB00B3B9B6 /* tolxxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tolxxUITests.swift; sourceTree = "<group>"; };
 		042C791023681DAB00B3B9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26951412CA12A45022A86EE0 /* Pods-tolxx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tolxx.debug.xcconfig"; path = "Target Support Files/Pods-tolxx/Pods-tolxx.debug.xcconfig"; sourceTree = "<group>"; };
+		A649B447A4E2144CEBCC6142 /* Pods-tolxx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tolxx.release.xcconfig"; path = "Target Support Files/Pods-tolxx/Pods-tolxx.release.xcconfig"; sourceTree = "<group>"; };
+		F638AFAF1623518BDD33E1B9 /* Pods_tolxx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tolxx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2F1E1F15D226021DAC07DE /* Pods_tolxx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				042C790223681DAB00B3B9B6 /* tolxxTests */,
 				042C790D23681DAB00B3B9B6 /* tolxxUITests */,
 				042C78EA23681DAA00B3B9B6 /* Products */,
+				191E441261B618506E0C863A /* Pods */,
+				2DB458CA1AAF4B7DD34FA080 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +135,24 @@
 			path = tolxxUITests;
 			sourceTree = "<group>";
 		};
+		191E441261B618506E0C863A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26951412CA12A45022A86EE0 /* Pods-tolxx.debug.xcconfig */,
+				A649B447A4E2144CEBCC6142 /* Pods-tolxx.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2DB458CA1AAF4B7DD34FA080 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F638AFAF1623518BDD33E1B9 /* Pods_tolxx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 042C791323681DAB00B3B9B6 /* Build configuration list for PBXNativeTarget "tolxx" */;
 			buildPhases = (
+				3982177A4A5EC113AA5E9007 /* [CP] Check Pods Manifest.lock */,
 				042C78E523681DAA00B3B9B6 /* Sources */,
 				042C78E623681DAA00B3B9B6 /* Frameworks */,
 				042C78E723681DAA00B3B9B6 /* Resources */,
+				D5AF5C9977242016BCC05D5C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3982177A4A5EC113AA5E9007 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tolxx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5AF5C9977242016BCC05D5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tolxx/Pods-tolxx-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-tolxx/Pods-tolxx-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-tolxx/Pods-tolxx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		042C78E523681DAA00B3B9B6 /* Sources */ = {
@@ -432,6 +501,7 @@
 		};
 		042C791423681DAB00B3B9B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26951412CA12A45022A86EE0 /* Pods-tolxx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +520,7 @@
 		};
 		042C791523681DAB00B3B9B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A649B447A4E2144CEBCC6142 /* Pods-tolxx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
