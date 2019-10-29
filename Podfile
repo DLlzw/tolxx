@@ -5,6 +5,8 @@ target 'tolxx' do
   use_frameworks!
  
   pod 'Alamofire'
+  pod 'SDAutoLayout', '~> 2.1.3'
+  pod 'Masonry'
  
 end
 
