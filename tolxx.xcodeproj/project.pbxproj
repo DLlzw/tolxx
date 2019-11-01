@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		042C78F923681DAA00B3B9B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042C78F723681DAA00B3B9B6 /* LaunchScreen.storyboard */; };
 		042C790423681DAB00B3B9B6 /* tolxxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C790323681DAB00B3B9B6 /* tolxxTests.swift */; };
 		042C790F23681DAB00B3B9B6 /* tolxxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C790E23681DAB00B3B9B6 /* tolxxUITests.swift */; };
+		042C796C236A854E00B3B9B6 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C796B236A854E00B3B9B6 /* BaseNavigationController.swift */; };
+		042C796E236A8F6F00B3B9B6 /* BaseUITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C796D236A8F6F00B3B9B6 /* BaseUITabBarController.swift */; };
+		042C7975236ABBF900B3B9B6 /* LxxMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C7974236ABBF900B3B9B6 /* LxxMainVc.swift */; };
+		042C7977236ABC6A00B3B9B6 /* EatMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C7976236ABC6A00B3B9B6 /* EatMainVc.swift */; };
+		042C797B236ABCB200B3B9B6 /* BeautyMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C797A236ABCB200B3B9B6 /* BeautyMainVc.swift */; };
+		042C797E236ABCD800B3B9B6 /* CatMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C797D236ABCD800B3B9B6 /* CatMainVc.swift */; };
+		042C7982236AC22600B3B9B6 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */; };
 		7E2F1E1F15D226021DAC07DE /* Pods_tolxx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F638AFAF1623518BDD33E1B9 /* Pods_tolxx.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +57,13 @@
 		042C790A23681DAB00B3B9B6 /* tolxxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tolxxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042C790E23681DAB00B3B9B6 /* tolxxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tolxxUITests.swift; sourceTree = "<group>"; };
 		042C791023681DAB00B3B9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042C796B236A854E00B3B9B6 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		042C796D236A8F6F00B3B9B6 /* BaseUITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITabBarController.swift; sourceTree = "<group>"; };
+		042C7974236ABBF900B3B9B6 /* LxxMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LxxMainVc.swift; sourceTree = "<group>"; };
+		042C7976236ABC6A00B3B9B6 /* EatMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EatMainVc.swift; sourceTree = "<group>"; };
+		042C797A236ABCB200B3B9B6 /* BeautyMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyMainVc.swift; sourceTree = "<group>"; };
+		042C797D236ABCD800B3B9B6 /* CatMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatMainVc.swift; sourceTree = "<group>"; };
+		042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		26951412CA12A45022A86EE0 /* Pods-tolxx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tolxx.debug.xcconfig"; path = "Target Support Files/Pods-tolxx/Pods-tolxx.debug.xcconfig"; sourceTree = "<group>"; };
 		A649B447A4E2144CEBCC6142 /* Pods-tolxx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tolxx.release.xcconfig"; path = "Target Support Files/Pods-tolxx/Pods-tolxx.release.xcconfig"; sourceTree = "<group>"; };
 		F638AFAF1623518BDD33E1B9 /* Pods_tolxx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tolxx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +120,10 @@
 		042C78EB23681DAA00B3B9B6 /* tolxx */ = {
 			isa = PBXGroup;
 			children = (
+				042C796923696D7100B3B9B6 /* Vendors */,
+				042C796823696D3F00B3B9B6 /* Code */,
+				042C796723696CED00B3B9B6 /* Tool */,
+				042C796623696CB700B3B9B6 /* Rsources */,
 				042C78EC23681DAA00B3B9B6 /* AppDelegate.swift */,
 				042C78EE23681DAA00B3B9B6 /* SceneDelegate.swift */,
 				042C78F023681DAA00B3B9B6 /* ViewController.swift */,
@@ -135,13 +153,87 @@
 			path = tolxxUITests;
 			sourceTree = "<group>";
 		};
+		042C796623696CB700B3B9B6 /* Rsources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rsources;
+			sourceTree = "<group>";
+		};
+		042C796723696CED00B3B9B6 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		042C796823696D3F00B3B9B6 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				042C797C236ABCBE00B3B9B6 /* Cat */,
+				042C7979236ABC8400B3B9B6 /* Beauty */,
+				042C7978236ABC7000B3B9B6 /* Eat */,
+				042C796F236AAE0A00B3B9B6 /* Lxx */,
+				042C796A23696D8500B3B9B6 /* Base */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		042C796923696D7100B3B9B6 /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		042C796A23696D8500B3B9B6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				042C796B236A854E00B3B9B6 /* BaseNavigationController.swift */,
+				042C796D236A8F6F00B3B9B6 /* BaseUITabBarController.swift */,
+				042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		042C796F236AAE0A00B3B9B6 /* Lxx */ = {
+			isa = PBXGroup;
+			children = (
+				042C7974236ABBF900B3B9B6 /* LxxMainVc.swift */,
+			);
+			path = Lxx;
+			sourceTree = "<group>";
+		};
+		042C7978236ABC7000B3B9B6 /* Eat */ = {
+			isa = PBXGroup;
+			children = (
+				042C7976236ABC6A00B3B9B6 /* EatMainVc.swift */,
+			);
+			path = Eat;
+			sourceTree = "<group>";
+		};
+		042C7979236ABC8400B3B9B6 /* Beauty */ = {
+			isa = PBXGroup;
+			children = (
+				042C797A236ABCB200B3B9B6 /* BeautyMainVc.swift */,
+			);
+			path = Beauty;
+			sourceTree = "<group>";
+		};
+		042C797C236ABCBE00B3B9B6 /* Cat */ = {
+			isa = PBXGroup;
+			children = (
+				042C797D236ABCD800B3B9B6 /* CatMainVc.swift */,
+			);
+			path = Cat;
+			sourceTree = "<group>";
+		};
 		191E441261B618506E0C863A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				26951412CA12A45022A86EE0 /* Pods-tolxx.debug.xcconfig */,
 				A649B447A4E2144CEBCC6142 /* Pods-tolxx.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -328,8 +420,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042C796C236A854E00B3B9B6 /* BaseNavigationController.swift in Sources */,
+				042C7982236AC22600B3B9B6 /* Bundle+Extensions.swift in Sources */,
 				042C78F123681DAA00B3B9B6 /* ViewController.swift in Sources */,
+				042C7975236ABBF900B3B9B6 /* LxxMainVc.swift in Sources */,
 				042C78ED23681DAA00B3B9B6 /* AppDelegate.swift in Sources */,
+				042C796E236A8F6F00B3B9B6 /* BaseUITabBarController.swift in Sources */,
+				042C797B236ABCB200B3B9B6 /* BeautyMainVc.swift in Sources */,
+				042C7977236ABC6A00B3B9B6 /* EatMainVc.swift in Sources */,
+				042C797E236ABCD800B3B9B6 /* CatMainVc.swift in Sources */,
 				042C78EF23681DAA00B3B9B6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,8 +604,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AUPDFGG754;
+				DEVELOPMENT_TEAM = XKS88ZTWKQ;
 				INFOPLIST_FILE = tolxx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,8 +624,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AUPDFGG754;
+				DEVELOPMENT_TEAM = XKS88ZTWKQ;
 				INFOPLIST_FILE = tolxx/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

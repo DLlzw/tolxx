@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+@available(iOS 13, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -18,14 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
-        let vc = ViewController()
-        let nc = UINavigationController(rootViewController: vc)
+        let tab = BaseUITabBarController()
 
         // Create the window. Be sure to use this initializer and not the frame one.
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = nc
+        window?.rootViewController = tab
         window?.makeKeyAndVisible()
+    
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
