@@ -30,10 +30,10 @@ extension BaseUITabBarController{
     private func setupChildControllers(){
         
         let array = [
-            ["clsName":"LxxMainVc","title":"首页","imageName":"home"],
-            ["clsName":"EatMainVc","title":"吃","imageName":"find"],
-            ["clsName":"BeautyMainVc","title":"美","imageName":"extend"],
-            ["clsName":"CatMainVc","title":"猫","imageName":"account"],
+            ["clsName":"LxxMainVc","title":"李","imageName":"li"],
+            ["clsName":"EatMainVc","title":"吃","imageName":"eat"],
+            ["clsName":"BeautyMainVc","title":"美","imageName":"mei"],
+            ["clsName":"CatMainVc","title":"猫","imageName":"cat"],
         ]
         var arrayM = [UIViewController]()
         for dict in array {
@@ -60,10 +60,35 @@ extension BaseUITabBarController{
         vc.tabBarItem.image = UIImage(named: imageName+"_normal")?.withRenderingMode(.alwaysOriginal)
         vc.tabBarItem.selectedImage = UIImage(named: imageName + "_highlight")?.withRenderingMode(.alwaysOriginal)
         
-        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.red], for: .normal)
-        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.blue], for: .highlighted)
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.black ], for: .normal)
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.init(red: 18 / 255.0, green: 150 / 255.0, blue: 219 / 255.0, alpha: 1.0)], for: .highlighted)
 //        vc.tabBarItem.badgeValue = "10"
         let nav = BaseNavigationController(rootViewController: vc)
         return nav
+    }
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        for (k,v) in (tabBar.items?.enumerated())! {
+            if v == item{
+                print(v)
+                animationWithIndex(index: k+1)
+            }
+        }
+    }
+
+    func animationWithIndex(index:Int){
+        var tabbarbuttonArrary:[Any] = [Any]()
+        for tabBarBtn in self.tabBar.subviews{
+            tabbarbuttonArrary.append(tabBarBtn)
+        }
+        let pulse = CABasicAnimation(keyPath: "transform.scale")
+        pulse.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeOut)
+        pulse.duration = 0.15
+        pulse.repeatCount = 1
+        pulse.autoreverses = true
+        pulse.fromValue = 0.9
+        pulse.toValue = 1.1
+        
+        let tabBarLayer = (tabbarbuttonArrary[index] as AnyObject).layer
+        tabBarLayer?.add(pulse, forKey: nil)
     }
 }
