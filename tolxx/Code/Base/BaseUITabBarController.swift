@@ -30,9 +30,9 @@ extension BaseUITabBarController{
     private func setupChildControllers(){
         
         let array = [
-            ["clsName":"LxxMainVc","title":"李","imageName":"li"],
-            ["clsName":"EatMainVc","title":"吃","imageName":"eat"],
-            ["clsName":"BeautyMainVc","title":"美","imageName":"mei"],
+            ["clsName":"LxxMainVc","title":"李鑫鑫","imageName":"li"],
+            ["clsName":"EatMainVc","title":"爱吃的","imageName":"eat"],
+            ["clsName":"BeautyMainVc","title":"美丽的","imageName":"mei"],
             ["clsName":"CatMainVc","title":"猫","imageName":"cat"],
         ]
         var arrayM = [UIViewController]()
