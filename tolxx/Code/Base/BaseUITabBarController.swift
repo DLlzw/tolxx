@@ -87,7 +87,7 @@ extension BaseUITabBarController{
         pulse.autoreverses = true
         pulse.fromValue = 0.9
         pulse.toValue = 1.1
-        
+
         let tabBarLayer = (tabbarbuttonArrary[index] as AnyObject).layer
         tabBarLayer?.add(pulse, forKey: nil)
     }

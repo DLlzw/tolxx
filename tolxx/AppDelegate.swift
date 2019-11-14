@@ -18,11 +18,21 @@ var window: UIWindow?
         if #available(iOS 13, *) {
             
         }else {
-        let tab = BaseUITabBarController()
-        window? = UIWindow.init()
-        window?.frame = UIScreen.main.bounds
-        window?.rootViewController = tab
-        window?.makeKeyAndVisible()
+//            if((UserDefaults.standard.bool(forKey: "forKeyLaunched"))){
+//                UserDefaults.standard.set(true, forKey: "forKeyLaunched")
+//                let Guide = GuideVc()
+//                window?.rootViewController = Guide
+//            }else{
+//                let tab = BaseUITabBarController()
+//                window? = UIWindow.init()
+//                window?.frame = UIScreen.main.bounds
+//                window?.rootViewController = tab
+//                window?.makeKeyAndVisible()
+//
+//            }
+            
+               let Guide = GuideVc()
+               window?.rootViewController = Guide
         }
         return true
     }

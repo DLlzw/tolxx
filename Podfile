@@ -7,6 +7,7 @@ target 'tolxx' do
   pod 'Alamofire'
   pod 'SDAutoLayout', '~> 2.1.3'
   pod 'Masonry'
+  pod 'SnapKit'
  
 end
 

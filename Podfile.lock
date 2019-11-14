@@ -2,23 +2,27 @@ PODS:
   - Alamofire (4.9.1)
   - Masonry (1.1.0)
   - SDAutoLayout (2.1.9)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - Masonry
   - SDAutoLayout (~> 2.1.3)
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Masonry
     - SDAutoLayout
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDAutoLayout: 6b6f4db0d009dfc46cef14ef710dbb164e86616c
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 74cf0a509f1e31a9865cccf0e2dd22a4cb423441
+PODFILE CHECKSUM: 3f9d464b72290ad6bdb7c1de7bce67e888bd39b0
 
 COCOAPODS: 1.8.0

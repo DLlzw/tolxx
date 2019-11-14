@@ -12,7 +12,6 @@
 		042C78F123681DAA00B3B9B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C78F023681DAA00B3B9B6 /* ViewController.swift */; };
 		042C78F423681DAA00B3B9B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042C78F223681DAA00B3B9B6 /* Main.storyboard */; };
 		042C78F623681DAA00B3B9B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042C78F523681DAA00B3B9B6 /* Assets.xcassets */; };
-		042C78F923681DAA00B3B9B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042C78F723681DAA00B3B9B6 /* LaunchScreen.storyboard */; };
 		042C790423681DAB00B3B9B6 /* tolxxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C790323681DAB00B3B9B6 /* tolxxTests.swift */; };
 		042C790F23681DAB00B3B9B6 /* tolxxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C790E23681DAB00B3B9B6 /* tolxxUITests.swift */; };
 		042C796C236A854E00B3B9B6 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C796B236A854E00B3B9B6 /* BaseNavigationController.swift */; };
@@ -22,6 +21,12 @@
 		042C797B236ABCB200B3B9B6 /* BeautyMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C797A236ABCB200B3B9B6 /* BeautyMainVc.swift */; };
 		042C797E236ABCD800B3B9B6 /* CatMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C797D236ABCD800B3B9B6 /* CatMainVc.swift */; };
 		042C7982236AC22600B3B9B6 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */; };
+		04AF0C78237D2D35001EE9EC /* loginVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04AF0C77237D2D35001EE9EC /* loginVideo.mp4 */; };
+		04C7DE6323793B1E00BC3E48 /* GuideVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7DE6223793B1E00BC3E48 /* GuideVc.swift */; };
+		04C7DE6523793E9C00BC3E48 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7DE6423793E9C00BC3E48 /* Macro.swift */; };
+		04C7DEB1237A7F0F00BC3E48 /* 包图小白体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C7DEB0237A7D8800BC3E48 /* 包图小白体.ttf */; };
+		04C7DEB7237B998600BC3E48 /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7DEB6237B998600BC3E48 /* UILable+Extension.swift */; };
+		04C7DEBA237BE14600BC3E48 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7DEB9237BE14600BC3E48 /* Login.swift */; };
 		7E2F1E1F15D226021DAC07DE /* Pods_tolxx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F638AFAF1623518BDD33E1B9 /* Pods_tolxx.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +54,6 @@
 		042C78F023681DAA00B3B9B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		042C78F323681DAA00B3B9B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		042C78F523681DAA00B3B9B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		042C78F823681DAA00B3B9B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042C78FA23681DAA00B3B9B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		042C78FF23681DAB00B3B9B6 /* tolxxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tolxxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042C790323681DAB00B3B9B6 /* tolxxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tolxxTests.swift; sourceTree = "<group>"; };
@@ -64,6 +68,12 @@
 		042C797A236ABCB200B3B9B6 /* BeautyMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyMainVc.swift; sourceTree = "<group>"; };
 		042C797D236ABCD800B3B9B6 /* CatMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatMainVc.swift; sourceTree = "<group>"; };
 		042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		04AF0C77237D2D35001EE9EC /* loginVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginVideo.mp4; sourceTree = "<group>"; };
+		04C7DE6223793B1E00BC3E48 /* GuideVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVc.swift; sourceTree = "<group>"; };
+		04C7DE6423793E9C00BC3E48 /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
+		04C7DEB0237A7D8800BC3E48 /* 包图小白体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "包图小白体.ttf"; sourceTree = "<group>"; };
+		04C7DEB6237B998600BC3E48 /* UILable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILable+Extension.swift"; path = "/Users/mac/Desktop/tolxx/tolxx/Code/Base/UILable+Extension.swift"; sourceTree = "<absolute>"; };
+		04C7DEB9237BE14600BC3E48 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		26951412CA12A45022A86EE0 /* Pods-tolxx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tolxx.debug.xcconfig"; path = "Target Support Files/Pods-tolxx/Pods-tolxx.debug.xcconfig"; sourceTree = "<group>"; };
 		A649B447A4E2144CEBCC6142 /* Pods-tolxx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tolxx.release.xcconfig"; path = "Target Support Files/Pods-tolxx/Pods-tolxx.release.xcconfig"; sourceTree = "<group>"; };
 		F638AFAF1623518BDD33E1B9 /* Pods_tolxx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tolxx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +139,6 @@
 				042C78F023681DAA00B3B9B6 /* ViewController.swift */,
 				042C78F223681DAA00B3B9B6 /* Main.storyboard */,
 				042C78F523681DAA00B3B9B6 /* Assets.xcassets */,
-				042C78F723681DAA00B3B9B6 /* LaunchScreen.storyboard */,
 				042C78FA23681DAA00B3B9B6 /* Info.plist */,
 			);
 			path = tolxx;
@@ -156,6 +165,8 @@
 		042C796623696CB700B3B9B6 /* Rsources */ = {
 			isa = PBXGroup;
 			children = (
+				04AF0C77237D2D35001EE9EC /* loginVideo.mp4 */,
+				04C7DEB0237A7D8800BC3E48 /* 包图小白体.ttf */,
 			);
 			path = Rsources;
 			sourceTree = "<group>";
@@ -163,6 +174,7 @@
 		042C796723696CED00B3B9B6 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				04C7DE6423793E9C00BC3E48 /* Macro.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -170,6 +182,8 @@
 		042C796823696D3F00B3B9B6 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				04C7DEB8237BDCF800BC3E48 /* Login */,
+				04C7DE61237937BF00BC3E48 /* Other */,
 				042C797C236ABCBE00B3B9B6 /* Cat */,
 				042C7979236ABC8400B3B9B6 /* Beauty */,
 				042C7978236ABC7000B3B9B6 /* Eat */,
@@ -189,6 +203,7 @@
 		042C796A23696D8500B3B9B6 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				04C7DEB6237B998600BC3E48 /* UILable+Extension.swift */,
 				042C796B236A854E00B3B9B6 /* BaseNavigationController.swift */,
 				042C796D236A8F6F00B3B9B6 /* BaseUITabBarController.swift */,
 				042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */,
@@ -226,6 +241,22 @@
 				042C797D236ABCD800B3B9B6 /* CatMainVc.swift */,
 			);
 			path = Cat;
+			sourceTree = "<group>";
+		};
+		04C7DE61237937BF00BC3E48 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				04C7DE6223793B1E00BC3E48 /* GuideVc.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		04C7DEB8237BDCF800BC3E48 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04C7DEB9237BE14600BC3E48 /* Login.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		191E441261B618506E0C863A /* Pods */ = {
@@ -351,7 +382,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				042C78F923681DAA00B3B9B6 /* LaunchScreen.storyboard in Resources */,
+				04AF0C78237D2D35001EE9EC /* loginVideo.mp4 in Resources */,
+				04C7DEB1237A7F0F00BC3E48 /* 包图小白体.ttf in Resources */,
 				042C78F623681DAA00B3B9B6 /* Assets.xcassets in Resources */,
 				042C78F423681DAA00B3B9B6 /* Main.storyboard in Resources */,
 			);
@@ -420,12 +452,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C7DE6323793B1E00BC3E48 /* GuideVc.swift in Sources */,
 				042C796C236A854E00B3B9B6 /* BaseNavigationController.swift in Sources */,
 				042C7982236AC22600B3B9B6 /* Bundle+Extensions.swift in Sources */,
 				042C78F123681DAA00B3B9B6 /* ViewController.swift in Sources */,
+				04C7DE6523793E9C00BC3E48 /* Macro.swift in Sources */,
 				042C7975236ABBF900B3B9B6 /* LxxMainVc.swift in Sources */,
 				042C78ED23681DAA00B3B9B6 /* AppDelegate.swift in Sources */,
+				04C7DEBA237BE14600BC3E48 /* Login.swift in Sources */,
 				042C796E236A8F6F00B3B9B6 /* BaseUITabBarController.swift in Sources */,
+				04C7DEB7237B998600BC3E48 /* UILable+Extension.swift in Sources */,
 				042C797B236ABCB200B3B9B6 /* BeautyMainVc.swift in Sources */,
 				042C7977236ABC6A00B3B9B6 /* EatMainVc.swift in Sources */,
 				042C797E236ABCD800B3B9B6 /* CatMainVc.swift in Sources */,
@@ -471,14 +507,6 @@
 				042C78F323681DAA00B3B9B6 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		042C78F723681DAA00B3B9B6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				042C78F823681DAA00B3B9B6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -603,16 +631,19 @@
 			baseConfigurationReference = 26951412CA12A45022A86EE0 /* Pods-tolxx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N3X2KJYTH;
 				INFOPLIST_FILE = tolxx/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzw.tolxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -623,16 +654,19 @@
 			baseConfigurationReference = A649B447A4E2144CEBCC6142 /* Pods-tolxx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N3X2KJYTH;
 				INFOPLIST_FILE = tolxx/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzw.tolxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

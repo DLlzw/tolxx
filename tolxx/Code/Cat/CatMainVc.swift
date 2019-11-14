@@ -12,7 +12,7 @@ class CatMainVc: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationController
         // Do any additional setup after loading the view.
     }
     
