@@ -79,10 +79,18 @@ class GuideVc: UIViewController,UIScrollViewDelegate {
             let loginNav = BaseNavigationController.init(rootViewController: loginVc)
             if #available(iOS 13.0, *) {
                 window = (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.window
+                let transtition = CATransition()
+                transtition.duration = 0.5
+                transtition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+                window?.layer.add(transtition, forKey: "animation")
 //              window?.rootViewController = tab
                 window?.rootViewController = loginNav
             } else {
                 // Fallback on earlier versions
+                let transtition = CATransition()
+                transtition.duration = 0.5
+                transtition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+                rootVC.window?.layer.add(transtition, forKey: "animation")
                 rootVC.window?.rootViewController = loginNav
             }
 //            rootVC.window?.rootViewController = tab

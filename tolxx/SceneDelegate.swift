@@ -22,7 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Create the window. Be sure to use this initializer and not the frame one.
         window = UIWindow(windowScene: windowScene)
         let Guide = GuideVc()
-        window?.rootViewController = Guide
+        let loginVc = Login()
+        window?.rootViewController = loginVc
+//        window?.rootViewController = Guide
         window?.makeKeyAndVisible()
     }
 
