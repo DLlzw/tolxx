@@ -18,19 +18,36 @@ class Login: UIViewController,UITextFieldDelegate {
     
     var play:AVPlayer?=nil
     var LoginView:UIView!
-    var TextUser:UITextField!
-    var TexPwd:UITextField!
+    var TextUser:Child!
+    var TexPwd:Child!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
-        reloadBgVideo()
+//        reloadBgVideo()
+        loginImage()
         Mask()
         loginView()
+        
+    }
+    func loginImage(){
+        let Bg = UIImageView()
+        Bg.frame = self.view.bounds
+        self.view .addSubview(Bg)
+        Bg.image = UIImage(named: "logobg.jpg")
     }
     func loginView() {
         LoginView = UIView()
         LoginView.backgroundColor = UIColor.clear
+        let MaoImageView = UIImageView()
+        self.view.addSubview(MaoImageView)
+        MaoImageView.image = UIImage(named: "mao")
+        MaoImageView.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.topMargin.equalToSuperview().offset(Ad(digital:80))
+            make.width.equalTo(Ad(digital: 309))
+            make.height.equalTo(Ad(digital: 277))
+        }
         self.view.addSubview(LoginView)
         LoginView?.snp.makeConstraints({ (make) in
             make.center.equalToSuperview()
@@ -38,16 +55,18 @@ class Login: UIViewController,UITextFieldDelegate {
             make.height.equalToSuperview().dividedBy(4)
             make.width.equalToSuperview().multipliedBy(0.8)
         })
-        TextUser = UITextField()
+        TextUser = Child()
         TextUser.backgroundColor = UIColor.white
-        TextUser.alpha = 0.3
+        TextUser.alpha = 0.5
         LoginView.addSubview(TextUser)
         TextUser.delegate = self
         TextUser.layer.cornerRadius = 5
         TextUser.layer.borderColor = UIColor.lightGray.cgColor
-        TextUser.leftView = UIView(frame: CGRect(x: 0, y: 0, width: CGFloat(Ad(digital: 44)) , height: CGFloat(Ad(digital: 44))))
+        let UserLeft =  UIImageView(frame: CGRect(x: 0, y: 0, width: CGFloat(Ad(digital: 30)) , height: CGFloat(Ad(digital: 30))))
+        UserLeft.image = UIImage(named: "管理")
+        TextUser.leftView = UserLeft
+        TextUser.font = UIFont.boldSystemFont(ofSize: 20)
         TextUser.leftViewMode = .always
-        TextUser.leftView?.backgroundColor = UIColor.red
         TextUser.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().offset(Ad(digital: 30))
@@ -55,22 +74,25 @@ class Login: UIViewController,UITextFieldDelegate {
             make.height.equalToSuperview().multipliedBy(0.29)
         }
         
-        TexPwd = UITextField()
+        TexPwd = Child()
         TexPwd.backgroundColor = UIColor.white
-        TexPwd.alpha = 0.3
+        TexPwd.alpha = 0.5
         LoginView.addSubview(TexPwd)
         TexPwd.delegate = self
         TexPwd.layer.cornerRadius = 5
         TexPwd.layer.borderColor = UIColor.lightGray.cgColor
-        TexPwd.leftView = UIView(frame: CGRect(x: 0, y: 0, width: CGFloat(Ad(digital: 44)) , height: CGFloat(Ad(digital: 44))))
+        let TexLeft =  UIImageView(frame: CGRect(x: 0, y: 0, width: CGFloat(Ad(digital: 30)) , height: CGFloat(Ad(digital: 30))))
+        TexLeft.image = UIImage(named: "密码")
+        TexPwd.leftView = TexLeft
         TexPwd.leftViewMode = .always
-        TexPwd.leftView?.backgroundColor = UIColor.green
         TexPwd.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.top.equalTo(TextUser.snp_bottomMargin).offset(Ad(digital: 30))
             make.width.equalToSuperview()
             make.height.equalToSuperview().multipliedBy(0.29)
         }
+        
+
     }
     func Mask(){
          let MView = UIView()
@@ -112,3 +134,4 @@ extension UIViewController{
     }
     
 }
+
