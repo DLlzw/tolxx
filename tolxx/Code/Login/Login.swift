@@ -7,6 +7,10 @@
 //
 import AVKit
 import UIKit
+enum LoginShowType {
+    case YES
+    case NO
+}
 class Scroll: UIView {
     override class var layerClass: AnyClass{
         get {
@@ -16,43 +20,79 @@ class Scroll: UIView {
 }
 class Login: UIViewController,UITextFieldDelegate {
     
+    var showType:LoginShowType = LoginShowType.NO
     var play:AVPlayer?=nil
     var LoginView:UIView!
     var TextUser:Child!
     var TexPwd:Child!
-    
+    var MaoImageView:UIImageView!
+    var SureBtn:UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
 //        reloadBgVideo()
         loginImage()
-        Mask()
         loginView()
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardHidden), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    deinit {
+               NotificationCenter.default.removeObserver(self)
+           }
+    @objc func keyboardShow(){
+         if (showType != LoginShowType.NO){
+                 return
+            }
+             showType = LoginShowType.YES
+        UIView.animate(withDuration: 0.5) {
+                 self.LoginView?.snp.updateConstraints({ (make) in
+                        make.centerY.equalTo(self.MaoImageView).offset(Ad(digital: 130))
+
+                    })
+                 self.SureBtn.snp.updateConstraints { (make) in
+                     make.top.equalTo(self.LoginView.snp_bottomMargin).offset(Ad(digital: 10))
+                 }
+                   self.view.layoutIfNeeded()
+             }
+
+
+    }
+    @objc func keyboardHidden(){
+        showType = LoginShowType.NO
+        UIView.animate(withDuration: 0.5) {
+                self.LoginView?.snp.updateConstraints({ (make) in
+                       make.centerY.equalTo(self.MaoImageView).offset(Ad(digital: 150))
+                   })
+                self.SureBtn.snp.updateConstraints { (make) in
+                    make.top.equalTo(self.LoginView.snp_bottomMargin).offset(Ad(digital: 80))
+                      }
+              self.view.layoutIfNeeded()
+            }
+
     }
     func loginImage(){
         let Bg = UIImageView()
         Bg.frame = self.view.bounds
         self.view .addSubview(Bg)
-        Bg.image = UIImage(named: "logobg.jpg")
+        Bg.image = UIImage(named: "logobg.png")
     }
     func loginView() {
         LoginView = UIView()
         LoginView.backgroundColor = UIColor.clear
-        let MaoImageView = UIImageView()
+        MaoImageView = UIImageView()
         self.view.addSubview(MaoImageView)
         MaoImageView.image = UIImage(named: "mao")
         MaoImageView.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
-            make.topMargin.equalToSuperview().offset(Ad(digital:80))
-            make.width.equalTo(Ad(digital: 309))
-            make.height.equalTo(Ad(digital: 277))
+            make.top.equalToSuperview().offset(Ad(digital: 100))
+            make.width.equalTo(Ad(digital: 309/2))
+            make.height.equalTo(Ad(digital: 277/2))
         }
         self.view.addSubview(LoginView)
         LoginView?.snp.makeConstraints({ (make) in
-            make.center.equalToSuperview()
-            make.centerY.equalToSuperview().offset(Ad(digital: -40))
-            make.height.equalToSuperview().dividedBy(4)
+            make.centerX.equalToSuperview()
+            make.centerY.equalTo(MaoImageView).offset(Ad(digital: 150))
+            make.height.equalTo(Ad(digital: 200))
             make.width.equalToSuperview().multipliedBy(0.8)
         })
         TextUser = Child()
@@ -84,6 +124,7 @@ class Login: UIViewController,UITextFieldDelegate {
         let TexLeft =  UIImageView(frame: CGRect(x: 0, y: 0, width: CGFloat(Ad(digital: 30)) , height: CGFloat(Ad(digital: 30))))
         TexLeft.image = UIImage(named: "密码")
         TexPwd.leftView = TexLeft
+        TexPwd.font = UIFont.boldSystemFont(ofSize: 20)
         TexPwd.leftViewMode = .always
         TexPwd.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
@@ -92,15 +133,18 @@ class Login: UIViewController,UITextFieldDelegate {
             make.height.equalToSuperview().multipliedBy(0.29)
         }
         
+        SureBtn = UIButton()
+        self.view.addSubview(SureBtn)
+        SureBtn.setBackgroundImage(UIImage.init(named: "向右"), for: .normal)
+        SureBtn.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(LoginView.snp_bottomMargin).offset(Ad(digital: 80))
+            make.width.equalTo(Ad(digital: 128/2))
+            make.height.equalTo(Ad(digital: 128/2))
+        }
 
     }
-    func Mask(){
-         let MView = UIView()
-         MView.frame = UIScreen.main.bounds
-         MView.backgroundColor = UIColor.gray
-         MView.alpha = 0.5
-         self.view.addSubview(MView)
-    }
+
     func reloadBgVideo(){
         let filePath = Bundle.main.path(forResource: "loginVideo", ofType: "mp4")!
         let videoUrl = URL(fileURLWithPath: filePath)
@@ -119,7 +163,40 @@ class Login: UIViewController,UITextFieldDelegate {
         playerItem.seek(to: CMTime.zero, completionHandler: nil)
         play?.play()
     }
-
+    
+//    func textFieldDidBeginEditing(_ textField: UITextField) {
+//        if (showType != LoginShowType.NO){
+//             return
+//        }
+//        print("----------")
+//        showType = LoginShowType.YES
+//        UIView.animate(withDuration: 0.5) {
+//            self.LoginView?.snp.updateConstraints({ (make) in
+//                   make.centerY.equalTo(self.MaoImageView).offset(Ad(digital: 150))
+//
+//               })
+//            self.SureBtn.snp.updateConstraints { (make) in
+//                make.top.equalTo(self.LoginView.snp_bottomMargin).offset(Ad(digital: 10))
+//            }
+//            self.view.layoutIfNeeded()
+//        }
+//
+//    }
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//        print("sssss")
+//        showType = LoginShowType.NO
+//        UIView.animate(withDuration: 0.5) {
+//                self.LoginView?.snp.updateConstraints({ (make) in
+//                       make.centerY.equalTo(self.MaoImageView).offset(Ad(digital: 180))
+//                   })
+//                self.SureBtn.snp.updateConstraints { (make) in
+//                    make.top.equalTo(self.LoginView.snp_bottomMargin).offset(Ad(digital: 80))
+//                      }
+//                self.view.layoutIfNeeded()
+//            }
+//
+//    }
+//
    
 }
 extension UIViewController{

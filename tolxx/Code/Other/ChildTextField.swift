@@ -15,7 +15,11 @@ class Child: UITextField {
         rect.origin.x = 16
         return rect
     }
-    
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        var rect = super.textRect(forBounds: bounds)
+        rect.origin.x = 70
+        return rect
+    }
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
         var rect = super.editingRect(forBounds: bounds)
         rect.origin.x = 70

@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0403DFEA2382BA5500738E87 /* logobg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0403DFE92382BA5500738E87 /* logobg.jpg */; };
 		0403DFFD2382C1E800738E87 /* 管理@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0403DFFC2382C1E800738E87 /* 管理@3x.png */; };
 		0403E0012382C4AB00738E87 /* 密码@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0403E0002382C4AB00738E87 /* 密码@3x.png */; };
 		0403E0032382C5BF00738E87 /* ChildTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403E0022382C5BF00738E87 /* ChildTextField.swift */; };
-		0403E0052382CC4C00738E87 /* mao.png in Resources */ = {isa = PBXBuildFile; fileRef = 0403E0042382CC4C00738E87 /* mao.png */; };
 		042C78ED23681DAA00B3B9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C78EC23681DAA00B3B9B6 /* AppDelegate.swift */; };
 		042C78EF23681DAA00B3B9B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C78EE23681DAA00B3B9B6 /* SceneDelegate.swift */; };
 		042C78F123681DAA00B3B9B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C78F023681DAA00B3B9B6 /* ViewController.swift */; };
@@ -26,6 +24,13 @@
 		042C797B236ABCB200B3B9B6 /* BeautyMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C797A236ABCB200B3B9B6 /* BeautyMainVc.swift */; };
 		042C797E236ABCD800B3B9B6 /* CatMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C797D236ABCD800B3B9B6 /* CatMainVc.swift */; };
 		042C7982236AC22600B3B9B6 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */; };
+		04935D07238387FC00CB0A95 /* 管理@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D06238387FC00CB0A95 /* 管理@2x.png */; };
+		04935D09238388FD00CB0A95 /* 密码@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D08238388FD00CB0A95 /* 密码@2x.png */; };
+		04935D0F238391D100CB0A95 /* mao.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D0E238391D000CB0A95 /* mao.png */; };
+		04935D162383A5B500CB0A95 /* TEXT@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D142383A5B500CB0A95 /* TEXT@3x.png */; };
+		04935D172383A5B500CB0A95 /* TEXT@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D152383A5B500CB0A95 /* TEXT@2x.png */; };
+		04935D192383BE0A00CB0A95 /* 向右@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D182383BE0A00CB0A95 /* 向右@3x.png */; };
+		04935D1B2383CF4800CB0A95 /* logobg.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D1A2383CF4800CB0A95 /* logobg.png */; };
 		04AF0C78237D2D35001EE9EC /* loginVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04AF0C77237D2D35001EE9EC /* loginVideo.mp4 */; };
 		04C7DE6323793B1E00BC3E48 /* GuideVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7DE6223793B1E00BC3E48 /* GuideVc.swift */; };
 		04C7DE6523793E9C00BC3E48 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7DE6423793E9C00BC3E48 /* Macro.swift */; };
@@ -53,11 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0403DFE92382BA5500738E87 /* logobg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logobg.jpg; sourceTree = "<group>"; };
 		0403DFFC2382C1E800738E87 /* 管理@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "管理@3x.png"; sourceTree = "<group>"; };
 		0403E0002382C4AB00738E87 /* 密码@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码@3x.png"; sourceTree = "<group>"; };
 		0403E0022382C5BF00738E87 /* ChildTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildTextField.swift; sourceTree = "<group>"; };
-		0403E0042382CC4C00738E87 /* mao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mao.png; sourceTree = "<group>"; };
 		042C78E923681DAA00B3B9B6 /* tolxx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tolxx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042C78EC23681DAA00B3B9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		042C78EE23681DAA00B3B9B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +81,13 @@
 		042C797A236ABCB200B3B9B6 /* BeautyMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyMainVc.swift; sourceTree = "<group>"; };
 		042C797D236ABCD800B3B9B6 /* CatMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatMainVc.swift; sourceTree = "<group>"; };
 		042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		04935D06238387FC00CB0A95 /* 管理@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "管理@2x.png"; sourceTree = "<group>"; };
+		04935D08238388FD00CB0A95 /* 密码@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码@2x.png"; sourceTree = "<group>"; };
+		04935D0E238391D000CB0A95 /* mao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mao.png; sourceTree = "<group>"; };
+		04935D142383A5B500CB0A95 /* TEXT@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TEXT@3x.png"; sourceTree = "<group>"; };
+		04935D152383A5B500CB0A95 /* TEXT@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TEXT@2x.png"; sourceTree = "<group>"; };
+		04935D182383BE0A00CB0A95 /* 向右@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "向右@3x.png"; sourceTree = "<group>"; };
+		04935D1A2383CF4800CB0A95 /* logobg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logobg.png; sourceTree = "<group>"; };
 		04AF0C77237D2D35001EE9EC /* loginVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginVideo.mp4; sourceTree = "<group>"; };
 		04C7DE6223793B1E00BC3E48 /* GuideVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVc.swift; sourceTree = "<group>"; };
 		04C7DE6423793E9C00BC3E48 /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
@@ -118,10 +128,15 @@
 		0403DFE82382BA3F00738E87 /* login */ = {
 			isa = PBXGroup;
 			children = (
-				0403E0042382CC4C00738E87 /* mao.png */,
+				04935D1A2383CF4800CB0A95 /* logobg.png */,
+				04935D182383BE0A00CB0A95 /* 向右@3x.png */,
+				04935D152383A5B500CB0A95 /* TEXT@2x.png */,
+				04935D142383A5B500CB0A95 /* TEXT@3x.png */,
+				04935D0E238391D000CB0A95 /* mao.png */,
+				04935D08238388FD00CB0A95 /* 密码@2x.png */,
+				04935D06238387FC00CB0A95 /* 管理@2x.png */,
 				0403E0002382C4AB00738E87 /* 密码@3x.png */,
 				0403DFFC2382C1E800738E87 /* 管理@3x.png */,
-				0403DFE92382BA5500738E87 /* logobg.jpg */,
 				04AF0C77237D2D35001EE9EC /* loginVideo.mp4 */,
 			);
 			path = login;
@@ -406,13 +421,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AF0C78237D2D35001EE9EC /* loginVideo.mp4 in Resources */,
+				04935D172383A5B500CB0A95 /* TEXT@2x.png in Resources */,
+				04935D1B2383CF4800CB0A95 /* logobg.png in Resources */,
 				04C7DEB1237A7F0F00BC3E48 /* 包图小白体.ttf in Resources */,
-				0403DFEA2382BA5500738E87 /* logobg.jpg in Resources */,
 				042C78F623681DAA00B3B9B6 /* Assets.xcassets in Resources */,
 				0403E0012382C4AB00738E87 /* 密码@3x.png in Resources */,
+				04935D0F238391D100CB0A95 /* mao.png in Resources */,
+				04935D09238388FD00CB0A95 /* 密码@2x.png in Resources */,
+				04935D162383A5B500CB0A95 /* TEXT@3x.png in Resources */,
+				04935D192383BE0A00CB0A95 /* 向右@3x.png in Resources */,
 				042C78F423681DAA00B3B9B6 /* Main.storyboard in Resources */,
 				0403DFFD2382C1E800738E87 /* 管理@3x.png in Resources */,
-				0403E0052382CC4C00738E87 /* mao.png in Resources */,
+				04935D07238387FC00CB0A95 /* 管理@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
