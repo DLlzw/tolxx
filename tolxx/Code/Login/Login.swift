@@ -7,6 +7,7 @@
 //
 import AVKit
 import UIKit
+import SVProgressHUD
 enum LoginShowType {
     case YES
     case NO
@@ -27,7 +28,11 @@ class Login: UIViewController,UITextFieldDelegate {
     var TexPwd:Child!
     var MaoImageView:UIImageView!
     var SureBtn:UIButton!
+    override func viewWillAppear(_ animated: Bool) {
+       
+    }
     override func viewDidLoad() {
+       
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
 //        reloadBgVideo()
@@ -35,6 +40,9 @@ class Login: UIViewController,UITextFieldDelegate {
         loginView()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardHidden), name: UIResponder.keyboardWillHideNotification, object: nil)
+//        SVProgressHUD.showInfo(withStatus: "正在加载...", maskType: SVProgressHUDMaskType.black);
+
+        
     }
     deinit {
                NotificationCenter.default.removeObserver(self)
@@ -81,12 +89,12 @@ class Login: UIViewController,UITextFieldDelegate {
         LoginView.backgroundColor = UIColor.clear
         MaoImageView = UIImageView()
         self.view.addSubview(MaoImageView)
-        MaoImageView.image = UIImage(named: "mao")
+        MaoImageView.image = UIImage(named: "圆")
         MaoImageView.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().offset(Ad(digital: 100))
-            make.width.equalTo(Ad(digital: 309/2))
-            make.height.equalTo(Ad(digital: 277/2))
+            make.width.equalTo(Ad(digital: 300/2.4))
+            make.height.equalTo(Ad(digital: 300/2.4))
         }
         self.view.addSubview(LoginView)
         LoginView?.snp.makeConstraints({ (make) in
@@ -98,14 +106,16 @@ class Login: UIViewController,UITextFieldDelegate {
         TextUser = Child()
         TextUser.backgroundColor = UIColor.white
         TextUser.alpha = 0.5
-        LoginView.addSubview(TextUser)
         TextUser.delegate = self
         TextUser.layer.cornerRadius = 5
         TextUser.layer.borderColor = UIColor.lightGray.cgColor
+        TextUser.placeholder = "请输入用户名"
+        LoginView.addSubview(TextUser)
+    
         let UserLeft =  UIImageView(frame: CGRect(x: 0, y: 0, width: CGFloat(Ad(digital: 30)) , height: CGFloat(Ad(digital: 30))))
         UserLeft.image = UIImage(named: "管理")
         TextUser.leftView = UserLeft
-        TextUser.font = UIFont.boldSystemFont(ofSize: 20)
+        TextUser.font = UIFont.boldSystemFont(ofSize: 18)
         TextUser.leftViewMode = .always
         TextUser.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
@@ -117,15 +127,18 @@ class Login: UIViewController,UITextFieldDelegate {
         TexPwd = Child()
         TexPwd.backgroundColor = UIColor.white
         TexPwd.alpha = 0.5
-        LoginView.addSubview(TexPwd)
+        TexPwd.placeholder = "请输入密码"
         TexPwd.delegate = self
-        TexPwd.layer.cornerRadius = 5
-        TexPwd.layer.borderColor = UIColor.lightGray.cgColor
+             TexPwd.layer.cornerRadius = 5
+             TexPwd.layer.borderColor = UIColor.lightGray.cgColor
+        LoginView.addSubview(TexPwd)
+     
         let TexLeft =  UIImageView(frame: CGRect(x: 0, y: 0, width: CGFloat(Ad(digital: 30)) , height: CGFloat(Ad(digital: 30))))
         TexLeft.image = UIImage(named: "密码")
         TexPwd.leftView = TexLeft
-        TexPwd.font = UIFont.boldSystemFont(ofSize: 20)
+        TexPwd.font = UIFont.boldSystemFont(ofSize: 18)
         TexPwd.leftViewMode = .always
+        TexPwd.isSecureTextEntry = true
         TexPwd.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.top.equalTo(TextUser.snp_bottomMargin).offset(Ad(digital: 30))
@@ -142,9 +155,12 @@ class Login: UIViewController,UITextFieldDelegate {
             make.width.equalTo(Ad(digital: 128/2))
             make.height.equalTo(Ad(digital: 128/2))
         }
+        SureBtn.addTarget(self, action: #selector(self.click), for:.touchUpInside)
 
     }
-
+    @objc func click(){
+         SVProgressHUD.showSuccess(withStatus: "加载成功")
+    }
     func reloadBgVideo(){
         let filePath = Bundle.main.path(forResource: "loginVideo", ofType: "mp4")!
         let videoUrl = URL(fileURLWithPath: filePath)

@@ -3,12 +3,14 @@ PODS:
   - Masonry (1.1.0)
   - SDAutoLayout (2.1.9)
   - SnapKit (5.0.1)
+  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire
   - Masonry
   - SDAutoLayout (~> 2.1.3)
   - SnapKit
+  - SVProgressHUD
 
 SPEC REPOS:
   trunk:
@@ -16,13 +18,15 @@ SPEC REPOS:
     - Masonry
     - SDAutoLayout
     - SnapKit
+    - SVProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDAutoLayout: 6b6f4db0d009dfc46cef14ef710dbb164e86616c
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 3f9d464b72290ad6bdb7c1de7bce67e888bd39b0
+PODFILE CHECKSUM: 4fa02f1b8f26680f7cfdc4b52ce8dcb6826b91f7
 
 COCOAPODS: 1.8.0

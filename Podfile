@@ -8,6 +8,7 @@ target 'tolxx' do
   pod 'SDAutoLayout', '~> 2.1.3'
   pod 'Masonry'
   pod 'SnapKit'
+  pod 'SVProgressHUD'
  
 end
 

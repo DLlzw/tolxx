@@ -23,8 +23,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         let Guide = GuideVc()
         let loginVc = Login()
-        window?.rootViewController = loginVc
-//        window?.rootViewController = Guide
+//        window?.rootViewController = loginVc
+        window?.rootViewController = Guide
         window?.makeKeyAndVisible()
     }
 

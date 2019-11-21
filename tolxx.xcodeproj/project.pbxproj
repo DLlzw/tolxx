@@ -26,12 +26,9 @@
 		042C7982236AC22600B3B9B6 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */; };
 		04935D07238387FC00CB0A95 /* 管理@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D06238387FC00CB0A95 /* 管理@2x.png */; };
 		04935D09238388FD00CB0A95 /* 密码@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D08238388FD00CB0A95 /* 密码@2x.png */; };
-		04935D0F238391D100CB0A95 /* mao.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D0E238391D000CB0A95 /* mao.png */; };
-		04935D162383A5B500CB0A95 /* TEXT@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D142383A5B500CB0A95 /* TEXT@3x.png */; };
-		04935D172383A5B500CB0A95 /* TEXT@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D152383A5B500CB0A95 /* TEXT@2x.png */; };
 		04935D192383BE0A00CB0A95 /* 向右@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D182383BE0A00CB0A95 /* 向右@3x.png */; };
 		04935D1B2383CF4800CB0A95 /* logobg.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D1A2383CF4800CB0A95 /* logobg.png */; };
-		04AF0C78237D2D35001EE9EC /* loginVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 04AF0C77237D2D35001EE9EC /* loginVideo.mp4 */; };
+		04935D1F238626B900CB0A95 /* 圆.png in Resources */ = {isa = PBXBuildFile; fileRef = 04935D1E238626B800CB0A95 /* 圆.png */; };
 		04C7DE6323793B1E00BC3E48 /* GuideVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7DE6223793B1E00BC3E48 /* GuideVc.swift */; };
 		04C7DE6523793E9C00BC3E48 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7DE6423793E9C00BC3E48 /* Macro.swift */; };
 		04C7DEB1237A7F0F00BC3E48 /* 包图小白体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C7DEB0237A7D8800BC3E48 /* 包图小白体.ttf */; };
@@ -83,12 +80,10 @@
 		042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
 		04935D06238387FC00CB0A95 /* 管理@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "管理@2x.png"; sourceTree = "<group>"; };
 		04935D08238388FD00CB0A95 /* 密码@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码@2x.png"; sourceTree = "<group>"; };
-		04935D0E238391D000CB0A95 /* mao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mao.png; sourceTree = "<group>"; };
-		04935D142383A5B500CB0A95 /* TEXT@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TEXT@3x.png"; sourceTree = "<group>"; };
-		04935D152383A5B500CB0A95 /* TEXT@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TEXT@2x.png"; sourceTree = "<group>"; };
 		04935D182383BE0A00CB0A95 /* 向右@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "向右@3x.png"; sourceTree = "<group>"; };
 		04935D1A2383CF4800CB0A95 /* logobg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logobg.png; sourceTree = "<group>"; };
-		04AF0C77237D2D35001EE9EC /* loginVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginVideo.mp4; sourceTree = "<group>"; };
+		04935D1D238528F600CB0A95 /* OcBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OcBridgingHeader.h; sourceTree = "<group>"; };
+		04935D1E238626B800CB0A95 /* 圆.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "圆.png"; sourceTree = "<group>"; };
 		04C7DE6223793B1E00BC3E48 /* GuideVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVc.swift; sourceTree = "<group>"; };
 		04C7DE6423793E9C00BC3E48 /* Macro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 		04C7DEB0237A7D8800BC3E48 /* 包图小白体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "包图小白体.ttf"; sourceTree = "<group>"; };
@@ -128,16 +123,13 @@
 		0403DFE82382BA3F00738E87 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				04935D1E238626B800CB0A95 /* 圆.png */,
 				04935D1A2383CF4800CB0A95 /* logobg.png */,
 				04935D182383BE0A00CB0A95 /* 向右@3x.png */,
-				04935D152383A5B500CB0A95 /* TEXT@2x.png */,
-				04935D142383A5B500CB0A95 /* TEXT@3x.png */,
-				04935D0E238391D000CB0A95 /* mao.png */,
 				04935D08238388FD00CB0A95 /* 密码@2x.png */,
 				04935D06238387FC00CB0A95 /* 管理@2x.png */,
 				0403E0002382C4AB00738E87 /* 密码@3x.png */,
 				0403DFFC2382C1E800738E87 /* 管理@3x.png */,
-				04AF0C77237D2D35001EE9EC /* loginVideo.mp4 */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -283,6 +275,7 @@
 		04C7DE61237937BF00BC3E48 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				04935D1D238528F600CB0A95 /* OcBridgingHeader.h */,
 				0403E0022382C5BF00738E87 /* ChildTextField.swift */,
 				04C7DE6223793B1E00BC3E48 /* GuideVc.swift */,
 			);
@@ -420,16 +413,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AF0C78237D2D35001EE9EC /* loginVideo.mp4 in Resources */,
-				04935D172383A5B500CB0A95 /* TEXT@2x.png in Resources */,
 				04935D1B2383CF4800CB0A95 /* logobg.png in Resources */,
 				04C7DEB1237A7F0F00BC3E48 /* 包图小白体.ttf in Resources */,
 				042C78F623681DAA00B3B9B6 /* Assets.xcassets in Resources */,
 				0403E0012382C4AB00738E87 /* 密码@3x.png in Resources */,
-				04935D0F238391D100CB0A95 /* mao.png in Resources */,
 				04935D09238388FD00CB0A95 /* 密码@2x.png in Resources */,
-				04935D162383A5B500CB0A95 /* TEXT@3x.png in Resources */,
 				04935D192383BE0A00CB0A95 /* 向右@3x.png in Resources */,
+				04935D1F238626B900CB0A95 /* 圆.png in Resources */,
 				042C78F423681DAA00B3B9B6 /* Main.storyboard in Resources */,
 				0403DFFD2382C1E800738E87 /* 管理@3x.png in Resources */,
 				04935D07238387FC00CB0A95 /* 管理@2x.png in Resources */,
@@ -684,7 +674,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKS88ZTWKQ;
 				INFOPLIST_FILE = tolxx/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -692,8 +682,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzw.tolxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/mac/Desktop/tolxx/tolxx/Code/Other/OcBridgingHeader.h;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -707,7 +698,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKS88ZTWKQ;
 				INFOPLIST_FILE = tolxx/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -715,8 +706,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lzw.tolxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/mac/Desktop/tolxx/tolxx/Code/Other/OcBridgingHeader.h;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
