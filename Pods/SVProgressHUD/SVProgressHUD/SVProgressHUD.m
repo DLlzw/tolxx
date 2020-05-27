@@ -375,7 +375,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
 - (instancetype)initWithFrame:(CGRect)frame {
     if((self = [super initWithFrame:frame])) {
         _isInitializing = YES;
-        
+   
         self.userInteractionEnabled = NO;
         self.activityCount = 0;
         
@@ -710,6 +710,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
     } else {
         [self moveToPoint:newCenter rotateAngle:rotateAngle];
     }
+   
 }
 
 - (void)moveToPoint:(CGPoint)newCenter rotateAngle:(CGFloat)angle {

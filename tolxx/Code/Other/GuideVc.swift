@@ -13,7 +13,7 @@ class GuideVc: UIViewController,UIScrollViewDelegate {
     var Scroll:UIScrollView?=nil
     var numberOfPage = 4
     let color :Array<UIColor> = [#colorLiteral(red: 0.5109232068, green: 0.7851083875, blue: 0.6277396679, alpha: 1),#colorLiteral(red: 0.3981503248, green: 0.5985657573, blue: 0.7974270582, alpha: 1),#colorLiteral(red: 0.7942704558, green: 0.6020501256, blue: 0.7709236741, alpha: 1),#colorLiteral(red: 0.9823203683, green: 0.3528756797, blue: 0.3530002832, alpha: 1)]
-    let strings :Array<String> = ["人生在世几十年","茫茫人世间","有你陪伴","此生足矣"]
+    let strings :Array<String> = ["今","日","头","条"]
     override func viewDidLoad() {
         super.viewDidLoad()
         let frame = self.view.bounds
@@ -31,7 +31,7 @@ class GuideVc: UIViewController,UIScrollViewDelegate {
             SView.backgroundColor = color[i]
 //            baotuxiaobaiti
             let lab = UILabel()
-            lab.font = UIFont(name: "baotuxiaobaiti", size: 44*AppFrame.Scale_Width)
+            lab.font = UIFont(name: "baotuxiaobaiti", size: 150*AppFrame.Scale_Width)
             lab.textColor = UIColor.white
             lab.verticalText = strings[i]
             lab.numberOfLines = 0
@@ -40,7 +40,7 @@ class GuideVc: UIViewController,UIScrollViewDelegate {
             lab.snp.makeConstraints { (make) in
                 make.center.equalToSuperview()
                 make.height.equalTo(Ad(digital: 500))
-                make.width.equalTo(Ad(digital: 50))
+                make.width.equalTo(Ad(digital: 150))
             }
             let labAnimation = CABasicAnimation(keyPath: "opacity")
             labAnimation.fromValue = 0

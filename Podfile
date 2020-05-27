@@ -1,3 +1,4 @@
+source ‘https://github.com/CocoaPods/Specs.git’
 platform :ios,"11.0"
  
 target 'tolxx' do
@@ -9,6 +10,9 @@ target 'tolxx' do
   pod 'Masonry'
   pod 'SnapKit'
   pod 'SVProgressHUD'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'ObjectMapper'
+  pod 'MBProgressHUD'
  
 end
 

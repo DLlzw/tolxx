@@ -30,10 +30,10 @@ extension BaseUITabBarController{
     private func setupChildControllers(){
         
         let array = [
-            ["clsName":"LxxMainVc","title":"李鑫鑫","imageName":"li"],
-            ["clsName":"EatMainVc","title":"爱吃的","imageName":"eat"],
-            ["clsName":"BeautyMainVc","title":"美丽的","imageName":"mei"],
-            ["clsName":"CatMainVc","title":"猫","imageName":"cat"],
+            ["clsName":"CatMainVc","title":"首页","imageName":"home"],
+            ["clsName":"EatMainVc","title":"西瓜视频","imageName":"new_video"],
+            ["clsName":"BeautyMainVc","title":"小视频","imageName":"huoshan"],
+            ["clsName":"LxxMainVc","title":"我的","imageName":"mine"],
         ]
         var arrayM = [UIViewController]()
         for dict in array {
@@ -57,11 +57,11 @@ extension BaseUITabBarController{
         let vc = cls.init()
         // 创建视图控制器
         vc.title = title
-        vc.tabBarItem.image = UIImage(named: imageName+"_normal")?.withRenderingMode(.alwaysOriginal)
-        vc.tabBarItem.selectedImage = UIImage(named: imageName + "_highlight")?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.image = UIImage(named: imageName+"_tabbar")?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.selectedImage = UIImage(named: imageName + "_tabbar_press")?.withRenderingMode(.alwaysOriginal)
         
         vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.black ], for: .normal)
-        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.init(red: 18 / 255.0, green: 150 / 255.0, blue: 219 / 255.0, alpha: 1.0)], for: .highlighted)
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.init(red: 237 / 255.0, green: 57 / 255.0, blue: 61 / 255.0, alpha: 1.0)], for: .highlighted)
 //        vc.tabBarItem.badgeValue = "10"
         let nav = BaseNavigationController(rootViewController: vc)
         return nav
@@ -87,8 +87,12 @@ extension BaseUITabBarController{
         pulse.autoreverses = true
         pulse.fromValue = 0.9
         pulse.toValue = 1.1
-
-        let tabBarLayer = (tabbarbuttonArrary[index] as AnyObject).layer
-        tabBarLayer?.add(pulse, forKey: nil)
+        let tabBarLayer:CALayer
+        if #available(iOS 13.0, *) {
+            tabBarLayer = (tabbarbuttonArrary[index] as AnyObject).layer
+        } else {
+            tabBarLayer = (tabbarbuttonArrary[index] as! CALayer)
+        }
+        tabBarLayer.add(pulse, forKey: nil)
     }
 }

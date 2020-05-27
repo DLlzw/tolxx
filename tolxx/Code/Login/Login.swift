@@ -28,6 +28,9 @@ class Login: UIViewController,UITextFieldDelegate {
     var TexPwd:Child!
     var MaoImageView:UIImageView!
     var SureBtn:UIButton!
+    
+    var user:String!
+    var mima:String!
     override func viewWillAppear(_ animated: Bool) {
        
     }
@@ -159,7 +162,15 @@ class Login: UIViewController,UITextFieldDelegate {
 
     }
     @objc func click(){
-         SVProgressHUD.showSuccess(withStatus: "加载成功")
+        if user == "User" && mima == "mima" {
+            let tabVC = BaseUITabBarController()
+            self.navigationController?.pushViewController(tabVC, animated: true)
+            
+        }else{
+        
+        }
+        
+        
     }
     func reloadBgVideo(){
         let filePath = Bundle.main.path(forResource: "loginVideo", ofType: "mp4")!
@@ -180,39 +191,14 @@ class Login: UIViewController,UITextFieldDelegate {
         play?.play()
     }
     
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        if (showType != LoginShowType.NO){
-//             return
-//        }
-//        print("----------")
-//        showType = LoginShowType.YES
-//        UIView.animate(withDuration: 0.5) {
-//            self.LoginView?.snp.updateConstraints({ (make) in
-//                   make.centerY.equalTo(self.MaoImageView).offset(Ad(digital: 150))
-//
-//               })
-//            self.SureBtn.snp.updateConstraints { (make) in
-//                make.top.equalTo(self.LoginView.snp_bottomMargin).offset(Ad(digital: 10))
-//            }
-//            self.view.layoutIfNeeded()
-//        }
-//
-//    }
-//    func textFieldDidEndEditing(_ textField: UITextField) {
-//        print("sssss")
-//        showType = LoginShowType.NO
-//        UIView.animate(withDuration: 0.5) {
-//                self.LoginView?.snp.updateConstraints({ (make) in
-//                       make.centerY.equalTo(self.MaoImageView).offset(Ad(digital: 180))
-//                   })
-//                self.SureBtn.snp.updateConstraints { (make) in
-//                    make.top.equalTo(self.LoginView.snp_bottomMargin).offset(Ad(digital: 80))
-//                      }
-//                self.view.layoutIfNeeded()
-//            }
-//
-//    }
-//
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.isEqual(TextUser) {
+            user = textField.text
+        }else{
+            mima = textField.text
+        }
+    }
+
    
 }
 extension UIViewController{
