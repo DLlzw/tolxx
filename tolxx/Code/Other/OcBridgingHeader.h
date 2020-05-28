@@ -8,6 +8,6 @@
 #ifndef OcBridgingHeader_h
 #define OcBridgingHeader_h
 #import "SVProgressHUD.h"
-
+#import "PagesContainer.h"
 #endif /* OcBridgingHeader_h */
 

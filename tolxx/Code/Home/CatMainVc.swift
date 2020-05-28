@@ -9,7 +9,10 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+
 class CatMainVc: UIViewController {
+    var pageContainer:PagesContainer?
+    let margin:CGFloat = 0
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
     }
@@ -24,6 +27,9 @@ class CatMainVc: UIViewController {
                 print(json["data"]["data"][0])
             }
         })
+
+        pageContainer  = PagesContainer(frame: CGRect.init(x: margin, y: 40, width: self.view.frame.size.width-margin*2, height: self.view.frame.size.height))
+        pageContainer?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
      
     
 //        request(url).responseJSON { (response) in
