@@ -192,9 +192,10 @@
 }
 
 #pragma mark - 获取顶部的tabBar
-- (PagesContainerTopBar*)topBar{
-    return _topBar;
+- (CGFloat)topBarr{
+    return TOPBAR_HEIGHT;
 }
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

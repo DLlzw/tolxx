@@ -168,7 +168,7 @@ public enum AppColor {
     static let clear = UIColor.clear
     
     //APP主题色
-    static let themeRed = RGB0X(hexValue: 0xfd2e2e)
+    static let themeRed = RGB0X(hexValue: 0xED393D)
     //APP红色
     static let red = RGB0X(hexValue: 0xff2323)
     //APP蓝色

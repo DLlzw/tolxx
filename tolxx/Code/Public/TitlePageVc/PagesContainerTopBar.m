@@ -129,7 +129,7 @@
         NSString *title = [titles objectAtIndex:i];
         UIButton *button = [self createCustomButtonWithTitle:title];
         button.titleLabel.font = [UIFont systemFontOfSize:14];
-        button.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:0.3];
+//        button.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:0.3];
         button.tag = i;
         [button sizeToFit];
         CGRect frame = button.frame;

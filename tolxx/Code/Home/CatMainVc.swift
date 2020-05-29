@@ -20,17 +20,39 @@ class CatMainVc: UIViewController {
         super.viewDidLoad()
         self.navigationController
         let url = Address.titleUrl
-        NetWork.share.getUrlData(url: url, finished: {(result,error)
-                in
+        var TitleArrary = Array<Any>()
+        NetWork.share.getUrlData(url: url, finished: {(result,error) in
             if result != nil {
                 let json = JSON(result ?? nil!)
-                print(json["data"]["data"][0])
+                let  data =  json["data"]["data"].arrayValue
+                for dicIndex in data {
+                    TitleArrary.append((dicIndex["name"].rawString()) as Any )
+                }
+                print(TitleArrary)
+                self.pageContainer  = PagesContainer(frame: CGRect.init(x: self.margin, y: 40, width: self.view.frame.size.width-self.margin*2, height: self.view.frame.size.height))
+                self.pageContainer?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                self.pageContainer?.backgroundColor = UIColor.white
+                self.pageContainer?.delegate = self as? PagesContainerDelegate
+                self.pageContainer?.updateContent(withTitles: TitleArrary)
+                self.pageContainer?.setIsButtonAlignmentLeft(true)
+                self.pageContainer?.setCursorHeight(3.0)
+                self.pageContainer?.setCursorColor(UIColor.white)
+                self.pageContainer?.setTextColor(UIColor.black, andSelectedColor: AppColor.themeRed)
+                    var tempTableView = Array<Any>()
+                let topBar = self.pageContainer!.topBarr()
+                    for sub in TitleArrary {
+                        let subView = ContentView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height-topBar-40))
+                        let color = UIColor(red: CGFloat(arc4random()%255) / CGFloat(255.0) , green: CGFloat(arc4random()%255) / CGFloat(255.0) , blue: CGFloat(arc4random()%255) / CGFloat(255.0), alpha: 0.3)
+                        subView.backgroundColor = color
+                        tempTableView.append(subView)
+                   
+                    }
+                self.pageContainer?.updateContent(withViews: tempTableView)
+                self.view.addSubview(self.pageContainer!)
             }
         })
+        
 
-        pageContainer  = PagesContainer(frame: CGRect.init(x: margin, y: 40, width: self.view.frame.size.width-margin*2, height: self.view.frame.size.height))
-        pageContainer?.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-     
     
 //        request(url).responseJSON { (response) in
 //            switch response.result {

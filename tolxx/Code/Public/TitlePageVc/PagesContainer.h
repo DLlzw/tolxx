@@ -49,6 +49,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setSelectedPageIndex:(NSInteger)index;
 
+/**
+ 获取顶部的tabBar
+ */
+- (CGFloat)topBarr;
 
 /**
  得到当前的页面
@@ -67,10 +71,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIView *)getPageViewWithIndex:(NSInteger)index;
 
-/**
- 获取顶部的tabBar
- */
-- (PagesContainerTopBar*)topBar;
+
 
 /**
  设置按钮选中和未选中的颜色

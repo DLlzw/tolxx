@@ -40,6 +40,7 @@
 		04C7DEB1237A7F0F00BC3E48 /* 包图小白体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04C7DEB0237A7D8800BC3E48 /* 包图小白体.ttf */; };
 		04C7DEB7237B998600BC3E48 /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7DEB6237B998600BC3E48 /* UILable+Extension.swift */; };
 		04C7DEBA237BE14600BC3E48 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C7DEB9237BE14600BC3E48 /* Login.swift */; };
+		04D885A02480DE5F008BFEF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8859F2480DE5F008BFEF0 /* ContentView.swift */; };
 		7E2F1E1F15D226021DAC07DE /* Pods_tolxx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F638AFAF1623518BDD33E1B9 /* Pods_tolxx.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,7 @@
 		04C7DEB0237A7D8800BC3E48 /* 包图小白体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "包图小白体.ttf"; sourceTree = "<group>"; };
 		04C7DEB6237B998600BC3E48 /* UILable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILable+Extension.swift"; path = "/Users/mac/Desktop/tolxx/tolxx/Code/Base/UILable+Extension.swift"; sourceTree = "<absolute>"; };
 		04C7DEB9237BE14600BC3E48 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		04D8859F2480DE5F008BFEF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		26951412CA12A45022A86EE0 /* Pods-tolxx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tolxx.debug.xcconfig"; path = "Target Support Files/Pods-tolxx/Pods-tolxx.debug.xcconfig"; sourceTree = "<group>"; };
 		A649B447A4E2144CEBCC6142 /* Pods-tolxx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tolxx.release.xcconfig"; path = "Target Support Files/Pods-tolxx/Pods-tolxx.release.xcconfig"; sourceTree = "<group>"; };
 		F638AFAF1623518BDD33E1B9 /* Pods_tolxx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tolxx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -287,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				042C797D236ABCD800B3B9B6 /* CatMainVc.swift */,
+				04D8859F2480DE5F008BFEF0 /* ContentView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				044BBC2B247FE67B0069609E /* topBarButton.m in Sources */,
 				04C7DEBA237BE14600BC3E48 /* Login.swift in Sources */,
 				042C796E236A8F6F00B3B9B6 /* BaseUITabBarController.swift in Sources */,
+				04D885A02480DE5F008BFEF0 /* ContentView.swift in Sources */,
 				04C7DEB7237B998600BC3E48 /* UILable+Extension.swift in Sources */,
 				042C797B236ABCB200B3B9B6 /* BeautyMainVc.swift in Sources */,
 				04AEEFBA247E7DE500D67E1B /* NetWork.swift in Sources */,
