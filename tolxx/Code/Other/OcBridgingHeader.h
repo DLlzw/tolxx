@@ -9,5 +9,6 @@
 #define OcBridgingHeader_h
 #import "SVProgressHUD.h"
 #import "PagesContainer.h"
+#import "MainTitleVc.h"
 #endif /* OcBridgingHeader_h */
 

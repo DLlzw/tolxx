@@ -42,6 +42,7 @@
     [self addSubview:_scrollView];
     _cursor = [[UIView alloc]initWithFrame:CGRectZero];
     _cursor.backgroundColor = [UIColor redColor];
+    self.backgroundColor = [UIColor whiteColor];
     _cursor.layer.cornerRadius = _cursorHeght/2.0;
     [_scrollView addSubview:_cursor];
 }
@@ -146,7 +147,7 @@
     tempArray = [NSMutableArray array];
     for (int i=0; i<[_arrayButtons count]-1; i++) {
         UIView *line  = [[UIView alloc]initWithFrame:CGRectMake(0, lineTop, 0.8, lineHeight)];
-        line.backgroundColor = [UIColor redColor];
+//        line.backgroundColor = [UIColor redColor];
         [_scrollView addSubview:line];
         [tempArray addObject:line];
     }

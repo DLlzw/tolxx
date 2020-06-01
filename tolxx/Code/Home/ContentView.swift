@@ -30,6 +30,7 @@ class ContentView: UIView,UITableViewDataSource,UITableViewDelegate {
         tableView.delegate = self
         tableView.dataSource = self
         self.addSubview(tableView)
+    
     }
     
     required init?(coder: NSCoder) {

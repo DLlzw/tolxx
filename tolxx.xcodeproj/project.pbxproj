@@ -24,6 +24,8 @@
 		042C797B236ABCB200B3B9B6 /* BeautyMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C797A236ABCB200B3B9B6 /* BeautyMainVc.swift */; };
 		042C797E236ABCD800B3B9B6 /* CatMainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C797D236ABCD800B3B9B6 /* CatMainVc.swift */; };
 		042C7982236AC22600B3B9B6 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */; };
+		043F89052484E219001B0BD6 /* TItleVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F89022484E219001B0BD6 /* TItleVc.m */; };
+		043F89062484E219001B0BD6 /* MainTitleVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F89042484E219001B0BD6 /* MainTitleVc.m */; };
 		044BBC28247FE67B0069609E /* PagesContainerTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BBC20247FE67B0069609E /* PagesContainerTopBar.m */; };
 		044BBC29247FE67B0069609E /* PagesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BBC22247FE67B0069609E /* PagesContainer.m */; };
 		044BBC2A247FE67B0069609E /* AllowPanGestureScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BBC23247FE67B0069609E /* AllowPanGestureScrollView.m */; };
@@ -85,6 +87,10 @@
 		042C797A236ABCB200B3B9B6 /* BeautyMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyMainVc.swift; sourceTree = "<group>"; };
 		042C797D236ABCD800B3B9B6 /* CatMainVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatMainVc.swift; sourceTree = "<group>"; };
 		042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		043F89012484E219001B0BD6 /* MainTitleVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTitleVc.h; sourceTree = "<group>"; };
+		043F89022484E219001B0BD6 /* TItleVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TItleVc.m; sourceTree = "<group>"; };
+		043F89032484E219001B0BD6 /* TItleVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TItleVc.h; sourceTree = "<group>"; };
+		043F89042484E219001B0BD6 /* MainTitleVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTitleVc.m; sourceTree = "<group>"; };
 		044BBC20247FE67B0069609E /* PagesContainerTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagesContainerTopBar.m; sourceTree = "<group>"; };
 		044BBC21247FE67B0069609E /* PagesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagesContainer.h; sourceTree = "<group>"; };
 		044BBC22247FE67B0069609E /* PagesContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagesContainer.m; sourceTree = "<group>"; };
@@ -305,6 +311,10 @@
 		044BBC1F247FE6520069609E /* TitlePageVc */ = {
 			isa = PBXGroup;
 			children = (
+				043F89012484E219001B0BD6 /* MainTitleVc.h */,
+				043F89042484E219001B0BD6 /* MainTitleVc.m */,
+				043F89032484E219001B0BD6 /* TItleVc.h */,
+				043F89022484E219001B0BD6 /* TItleVc.m */,
 				044BBC26247FE67B0069609E /* AllowPanGestureScrollView.h */,
 				044BBC23247FE67B0069609E /* AllowPanGestureScrollView.m */,
 				044BBC21247FE67B0069609E /* PagesContainer.h */,
@@ -534,7 +544,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043F89062484E219001B0BD6 /* MainTitleVc.m in Sources */,
 				04C7DE6323793B1E00BC3E48 /* GuideVc.swift in Sources */,
+				043F89052484E219001B0BD6 /* TItleVc.m in Sources */,
 				044BBC2A247FE67B0069609E /* AllowPanGestureScrollView.m in Sources */,
 				042C796C236A854E00B3B9B6 /* BaseNavigationController.swift in Sources */,
 				0403E0032382C5BF00738E87 /* ChildTextField.swift in Sources */,
