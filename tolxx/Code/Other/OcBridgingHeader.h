@@ -55,7 +55,7 @@
 
 #define SafeAreaBottomHeight (IPHONE_X ? (49 + 34) : 49)
 
-
+#define APPThemeColor [UIColor colorWithRed:230/255.0 green:100/255.0 blue:95/255.0 alpha:1.0];
 
 #endif /* OcBridgingHeader_h */
 
