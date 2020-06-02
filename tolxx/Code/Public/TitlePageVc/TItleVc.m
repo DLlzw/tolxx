@@ -8,6 +8,7 @@
 
 #import "TItleVc.h"
 
+
 @interface TItleVc ()
 
 @end
@@ -20,6 +21,11 @@
     UILabel * la = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 199, 199)];
     [self.view addSubview:la];
     [la setText:@"wer"];
+
+
+
+    
+
 }
 
 /*

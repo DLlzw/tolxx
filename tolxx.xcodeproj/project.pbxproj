@@ -26,6 +26,7 @@
 		042C7982236AC22600B3B9B6 /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C7981236AC22600B3B9B6 /* Bundle+Extensions.swift */; };
 		043F89052484E219001B0BD6 /* TItleVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F89022484E219001B0BD6 /* TItleVc.m */; };
 		043F89062484E219001B0BD6 /* MainTitleVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F89042484E219001B0BD6 /* MainTitleVc.m */; };
+		043F890B24861625001B0BD6 /* HeardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 043F890A24861625001B0BD6 /* HeardView.m */; };
 		044BBC28247FE67B0069609E /* PagesContainerTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BBC20247FE67B0069609E /* PagesContainerTopBar.m */; };
 		044BBC29247FE67B0069609E /* PagesContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BBC22247FE67B0069609E /* PagesContainer.m */; };
 		044BBC2A247FE67B0069609E /* AllowPanGestureScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BBC23247FE67B0069609E /* AllowPanGestureScrollView.m */; };
@@ -91,6 +92,8 @@
 		043F89022484E219001B0BD6 /* TItleVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TItleVc.m; sourceTree = "<group>"; };
 		043F89032484E219001B0BD6 /* TItleVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TItleVc.h; sourceTree = "<group>"; };
 		043F89042484E219001B0BD6 /* MainTitleVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTitleVc.m; sourceTree = "<group>"; };
+		043F890924861625001B0BD6 /* HeardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeardView.h; sourceTree = "<group>"; };
+		043F890A24861625001B0BD6 /* HeardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeardView.m; sourceTree = "<group>"; };
 		044BBC20247FE67B0069609E /* PagesContainerTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagesContainerTopBar.m; sourceTree = "<group>"; };
 		044BBC21247FE67B0069609E /* PagesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagesContainer.h; sourceTree = "<group>"; };
 		044BBC22247FE67B0069609E /* PagesContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagesContainer.m; sourceTree = "<group>"; };
@@ -304,6 +307,8 @@
 			isa = PBXGroup;
 			children = (
 				044BBC1F247FE6520069609E /* TitlePageVc */,
+				043F890924861625001B0BD6 /* HeardView.h */,
+				043F890A24861625001B0BD6 /* HeardView.m */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -567,6 +572,7 @@
 				042C797E236ABCD800B3B9B6 /* CatMainVc.swift in Sources */,
 				044BBC29247FE67B0069609E /* PagesContainer.m in Sources */,
 				04AEEFB8247E7C2300D67E1B /* Address.swift in Sources */,
+				043F890B24861625001B0BD6 /* HeardView.m in Sources */,
 				042C78EF23681DAA00B3B9B6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -737,6 +743,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKS88ZTWKQ;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/tolxx/tolxx/Code/Other/OcBridgingHeader.h;
 				INFOPLIST_FILE = tolxx/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -761,6 +768,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKS88ZTWKQ;
+				GCC_PREFIX_HEADER = /Users/mac/Desktop/tolxx/tolxx/Code/Other/OcBridgingHeader.h;
 				INFOPLIST_FILE = tolxx/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
