@@ -11,6 +11,7 @@
 #import "PagesContainer.h"
 #import "MainTitleVc.h"
 #import "HeardView.h"
+#import "Masonry.h"
 
 
 //屏幕的宽度和高度
@@ -24,6 +25,8 @@
 #define ELog(...)
 #endif
 
+//缩放比例宏
+#define RV(value) ((value)/375.0f*[UIScreen mainScreen].bounds.size.width)
 
 #define IPHONE_X ({\
     BOOL isBangsScreen = NO; \

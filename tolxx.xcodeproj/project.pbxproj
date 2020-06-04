@@ -10,6 +10,7 @@
 		0403DFFD2382C1E800738E87 /* 管理@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0403DFFC2382C1E800738E87 /* 管理@3x.png */; };
 		0403E0012382C4AB00738E87 /* 密码@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0403E0002382C4AB00738E87 /* 密码@3x.png */; };
 		0403E0032382C5BF00738E87 /* ChildTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0403E0022382C5BF00738E87 /* ChildTextField.swift */; };
+		04043C0A2489192A00B5E947 /* home in Resources */ = {isa = PBXBuildFile; fileRef = 04043C092489192A00B5E947 /* home */; };
 		042C78ED23681DAA00B3B9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C78EC23681DAA00B3B9B6 /* AppDelegate.swift */; };
 		042C78EF23681DAA00B3B9B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C78EE23681DAA00B3B9B6 /* SceneDelegate.swift */; };
 		042C78F123681DAA00B3B9B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C78F023681DAA00B3B9B6 /* ViewController.swift */; };
@@ -68,6 +69,7 @@
 		0403DFFC2382C1E800738E87 /* 管理@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "管理@3x.png"; sourceTree = "<group>"; };
 		0403E0002382C4AB00738E87 /* 密码@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "密码@3x.png"; sourceTree = "<group>"; };
 		0403E0022382C5BF00738E87 /* ChildTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChildTextField.swift; sourceTree = "<group>"; };
+		04043C092489192A00B5E947 /* home */ = {isa = PBXFileReference; lastKnownFileType = folder; path = home; sourceTree = "<group>"; };
 		042C78E923681DAA00B3B9B6 /* tolxx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tolxx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042C78EC23681DAA00B3B9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		042C78EE23681DAA00B3B9B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		042C796623696CB700B3B9B6 /* Rsources */ = {
 			isa = PBXGroup;
 			children = (
+				04043C092489192A00B5E947 /* home */,
 				0403DFE82382BA3F00738E87 /* login */,
 				04C7DEB0237A7D8800BC3E48 /* 包图小白体.ttf */,
 			);
@@ -473,6 +476,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04043C0A2489192A00B5E947 /* home in Resources */,
 				04935D1B2383CF4800CB0A95 /* logobg.png in Resources */,
 				04C7DEB1237A7F0F00BC3E48 /* 包图小白体.ttf in Resources */,
 				042C78F623681DAA00B3B9B6 /* Assets.xcassets in Resources */,
